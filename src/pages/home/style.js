@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     labs:{
         flexDirection: 'row', 
         alignItems: 'center',
-        justifyContent:'center',
+        justifyContent:'space-around',
         gap: 8,
         position: 'absolute',
         top: 6,
@@ -24,8 +24,11 @@ export const styles = StyleSheet.create({
     labsText:{
         color: 'white',
         fontSize: 16,
-        fontWeight: '500',
+        fontWeight: 'bold',
         marginBottom: 2,
+        textShadowColor: 'rgba(0,0,0, 0.60)',
+        textShadowOffset: {width: -1, height: 1.5},
+        textShadowRadius: 8,
     },
     line:{
         backgroundColor: 'white',
