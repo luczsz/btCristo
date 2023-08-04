@@ -21,6 +21,9 @@ export default function AuthRoutes(){
             <AuthStack.Screen 
                 name='SingIn'
                 component={SingIn}
+                options={{
+                    headerShown: false,
+                }}
             />
 
             <AuthStack.Screen 
