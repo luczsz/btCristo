@@ -29,6 +29,9 @@ export default function AuthRoutes(){
             <AuthStack.Screen 
                 name='SingOn'
                 component={SingOn}
+                options={{
+                    headerShown: false,
+                }}
             />
         
         </AuthStack.Navigator>
