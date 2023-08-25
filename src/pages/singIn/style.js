@@ -9,10 +9,15 @@ export const styles = StyleSheet.create({
     },
 
     content:{
+        flex: 1,
         marginTop: 32,
-        height: '95%',
         paddingLeft: 20,
         paddingTop: 22,
+    },
+
+    buttons:{
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     
     title:{
@@ -24,7 +29,7 @@ export const styles = StyleSheet.create({
 
     input:{
         width: '95%',
-        height: '10%',
+        height: 60,
         flexDirection: 'row',
         alignItems: 'center',
 
@@ -48,7 +53,7 @@ export const styles = StyleSheet.create({
 
     submitBnt:{
         backgroundColor: theme.colors.secondary50,
-        marginTop: 20,
+        marginTop: 10,
         width: '95%',
 
         padding: 10,
@@ -64,13 +69,13 @@ export const styles = StyleSheet.create({
         color: theme.colors.secondary40,
     },
     direc:{
-        marginTop: 20,
+
         flexDirection: 'row',
         height: 50,
         
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 4,
-    }
+        gap: 8,
+    },
 
 })

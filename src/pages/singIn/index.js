@@ -29,6 +29,7 @@ export default function SingIn() {
                   autoCapitalize='none'
                 />
             </View>
+
             <View style={styles.input} >
                 <Feather name='key' size={35} color={'#f5f5f5'} />
                 <TextInput
@@ -44,6 +45,11 @@ export default function SingIn() {
               <Text style={{color:'white', fontWeight: 'bold'}}>Esqueci minha senha</Text>
             </TouchableOpacity>
 
+        </View>
+
+        
+        <View style={styles.buttons} >
+
             <TouchableOpacity style={styles.submitBnt} >
               <Text style={styles.submitText}>E N T R A R</Text>
             </TouchableOpacity>
@@ -56,6 +62,8 @@ export default function SingIn() {
                   <Text style={{color: theme.colors.secondary50, fontWeight: 'bold', textTransform: 'uppercase'}}>C A D A S T R E - S E</Text>
                 </TouchableOpacity>
             </View>
+
+
 
         </View>
         

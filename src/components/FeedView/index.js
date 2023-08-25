@@ -50,7 +50,7 @@ export default function FeedView({data, currentVisibleItem}) {
 
         <Video
           ref={video}
-          style={{ width: '100%', height: 810, }}
+          style={{ width: '100%', height: 812, }}
           source={{ uri: data?.video }}
           resizeMode="cover"
           shouldPlay={false}
