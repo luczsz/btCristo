@@ -36,34 +36,16 @@ export default function New() {
  
   return (
    <View style={styles.container} >
-        <Camera style={styles.camer} type={type} ref={ref => setCameraRef(ref)}  >
+        <Camera style={styles.camer} type={CameraType.front} ref={ref => setCameraRef(ref)}  >
 
-        <View style={{ flex: 1, backgroundColor: 'transparent', justifyContent: 'flex-end' }}>
-          <Button
-            title="Capture"
-            onPress={async () => {
-              if (cameraRef) {
-                let photo = await cameraRef.takePictureAsync();
-                console.log(photo);
-                setImg(photo);
-              }
-            }}
-          />
+        <View style={{ flex: 1, backgroundColor: 'transparent', justifyContent: 'center', alignItems: 'center' }}>
+            <Text style={{color: 'white'}}>
+              tee
+            </Text>
         </View>
 
 
         </Camera>    
-          <TouchableOpacity 
-            style={styles.button} 
-            onPress={toggleCameraType}
-          >
-            <Text style={styles.text}>Flip Camera</Text>
-          </TouchableOpacity>
-        <Text>PAGINA 3</Text>
-        <Image
-          style={{width: '30%', height: '30%'}}
-          source={img}
-        />
    </View>
   );
 }

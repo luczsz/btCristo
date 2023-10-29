@@ -11,8 +11,9 @@ export const styles = StyleSheet.create({
     },
 
     camer:{
-        width: '50%',
-        height: '50%',
+        marginTop:32,
+        width: '100%',
+        height: 795,
         backgroundColor: 'grey',
     },
 })
